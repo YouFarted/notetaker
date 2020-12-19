@@ -21,5 +21,7 @@ app.get('*', function(req, res) {
 
 app.post('/api/notes', dbManagement.addToDatabase )
 
+app.delete('/api/notes/:id', dbManagement.deleteFromDatabase)
+
 
 app.listen(PORT, () => console.log(`Listening at http://localhost:${PORT}`))
