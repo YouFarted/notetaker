@@ -123,10 +123,6 @@ const renderNoteList = (notes) => {
     return li;
   };
 
-  // FAKE
-  notes = new Array();
-  // FAKE
-
   if (notes.length === 0) {
     noteListItems.push(createLi("No saved Notes", false));
   }
