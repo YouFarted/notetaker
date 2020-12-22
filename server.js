@@ -7,6 +7,8 @@ const dbManagement = require('./lib/dbManagement')
 const app = express()
 const PORT = process.env.PORT | 8080
 
+app.set('port', PORT);
+
 // middleware
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended: false}));
